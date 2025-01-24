@@ -3,6 +3,14 @@ from openai import OpenAI
 
 st.title("ChatGPT-like clone")
 
+#Model Selection
+moddel_options=[
+    'gpt-3.5-turbo',
+'gpt-3.5-turbo-instruct',
+'gpt-3.5-turbo-1106',
+'gpt-3.5-turbo-0125'
+]
+
 # Set OpenAI API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
