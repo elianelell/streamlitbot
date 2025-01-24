@@ -10,6 +10,7 @@ moddel_options=[
 'gpt-3.5-turbo-1106',
 'gpt-3.5-turbo-0125'
 ]
+max_tokens= st.slider("Max Tokens", min_value=0, max_value=500, value=200)
 
 # Set OpenAI API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
